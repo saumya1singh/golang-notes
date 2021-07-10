@@ -1,11 +1,13 @@
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 func main() {
-    //variable s of type string has been declared
-    var s string
+	//variable s of type string has been declared
+	var s string
 
-    fmt.Scanln(&s)
-    fmt.Println(s)
+	fmt.Scanln(&s)
+	fmt.Println(s)
 }
