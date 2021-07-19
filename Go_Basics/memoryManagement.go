@@ -31,5 +31,5 @@ func main() {
 
 	/* Memory de allocation
 	memory is de allocated using GC - garbage collector
-	 */
+	*/
 }
