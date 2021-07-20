@@ -45,9 +45,9 @@ func main() {
 
 	/* sort the slice named keys alphabetically */
 	sort.Strings(keys)
-	fmt.Println("Print the slice", keys)
+	fmt.Println("Print the slice : ", keys)
 	//     fmt.Println("Now print sorted map")
-    for i := range languages {
-        fmt.Printf("%v : %v\n", i, languages[i])
-    }
+	for i := range keys {
+		fmt.Printf("%v \n", languages[keys[i]])
+	}
 }
