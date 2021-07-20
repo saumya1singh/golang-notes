@@ -5,6 +5,7 @@ package main
 
 import (
 	"fmt"
+	"sort"
 )
 
 func main() {
@@ -31,4 +32,22 @@ func main() {
 		fmt.Printf("%v : %v \n", k, v)
 	}
 
+	/* Sorting maps result using SLICES */
+	/* when iterating iver range keyword if you only assign one variable you
+	will only get the key and not value*/
+
+	keys := make([]string, len(languages))
+	i := 0
+	for k := range languages {
+		keys[i] = k
+		i++
+	}
+
+	/* sort the slice named keys alphabetically */
+	sort.Strings(keys)
+	fmt.Println("Print the slice", keys)
+	//     fmt.Println("Now print sorted map")
+    for i := range languages {
+        fmt.Printf("%v : %v\n", i, languages[i])
+    }
 }
