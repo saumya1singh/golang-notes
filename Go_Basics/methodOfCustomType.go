@@ -10,7 +10,8 @@ type Dog struct {
 	Sound  string
 }
 
-/* methods of custom type e.g structure */
+/* methods of custom type e.g structure
+method of type structure (dog)*/
 /* these functions don't accept params, neither do they return any value */
 func (d Dog) Speak() {
 	fmt.Println(d.Sound)
