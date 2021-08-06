@@ -13,8 +13,8 @@ func main() {
 	checkError(err)
 	defer file.Close()
 
-    /* Write something to the file using WriteString() method
-    it returns length of characters in the file */
+	/* Write something to the file using WriteString() method
+	   it returns length of characters in the file */
 	length, err := io.WriteString(file, content)
 	checkError(err)
 
